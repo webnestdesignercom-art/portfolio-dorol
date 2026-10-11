@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mikee Dorol | Student Web Developer</title>
+  <meta name="description" content="Portfolio of Mikee Dorol, a student web developer looking for an OJT placement." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#home" class="brand">Mikee Dorol</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#ojt">OJT</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Hi, I'm Mikee. I'm a student who builds responsive websites.</h1>
+          <p class="lead">
+            I've spent the past 10 months learning web development by building real projects, from
+            landing pages to a small app with a database. I'm looking for an OJT where I can learn
+            from a dev team and contribute to real work.
+          </p>
+          <div class="actions">
+            <a href="#projects" class="btn btn-primary">See my projects</a>
+            <a href="mailto:mikeedorol0@gmail.com" class="btn btn-ghost">Email me</a>
+          </div>
+        </div>
+
+        <dl class="facts">
+          <div><dt>Status</dt><dd class="status">Open for OJT</dd></div>
+          <div><dt>Course</dt><dd>BSIT, Pamantasan ng Lungsod ng Muntinlupa</dd></div>
+          <div><dt>Focus</dt><dd>Frontend development</dd></div>
+          <div><dt>Learning for</dt><dd>10 months</dd></div>
+          <div><dt>Projects built</dt><dd>4</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap split">
+        <h2>About me</h2>
+        <div class="prose">
+          <p>
+            I'm a 4th Year BS Information Technology student. I got into web development because I like seeing
+            something I designed turn into a page that people can actually open and use.
+          </p>
+          <p>
+            Most of what I know came from building. I start in Figma or on paper, code it with
+            React, Next.js and Tailwind, then deploy it on Vercel. Every project below is something I
+            made for practice, so I can show how I work and where I'm still improving.
+          </p>
+          <p>
+            For my OJT, I want to learn how a real team works: Git workflows, code reviews, and
+            shipping features that real users depend on.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="wrap split">
+    <h2>Skills</h2>
+
+    <div class="skills">
+      <div>
+        <h3>Frontend</h3>
+        <ul class="tags">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Tailwind CSS</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Tools and Design</h3>
+        <ul class="tags">
+          <li>Git and GitHub</li>
+          <li>Vercel</li>
+          <li>Figma</li>
+          <li>Canva</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- AI-ASSISTED WORKFLOW -->
+    <div class="ai-workflow">
+      <h3>AI-Assisted Workflow</h3>
+      <p>
+        I use AI tools to explore ideas, support coding, troubleshoot issues,
+        and learn new concepts. I review and adapt the results to fit my
+        project goals while continuing to improve my own skills.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="section-note">A mobile app project, with a short write-up of the screens and the thinking behind them.</p>
+
+        <div class="projects">
+
+          <article class="project">
+            <div class="shot shot-phones" style="background: linear-gradient(135deg, #0d0d0d 0%, #14214d 60%, #f5a524 100%);">
+              <div class="phones" role="img" aria-label="Three screens from the MKDWander app: Home, Sign in and Smart Recommendations">
+                <div class="phone phone--l">
+                  <div class="screen"><img src="./images/mkdwander-home.jpg" alt="" width="393" height="1425" loading="lazy" /></div>
+                  <span class="notch"></span>
+                </div>
+                <div class="phone">
+                  <div class="screen"><img src="./images/mkdwander-signin.jpg" alt="" width="393" height="852" loading="lazy" /></div>
+                  <span class="notch"></span>
+                </div>
+                <div class="phone phone--r">
+                  <div class="screen"><img src="./images/mkdwander-match.jpg" alt="" width="393" height="1349" loading="lazy" /></div>
+                  <span class="notch"></span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>MKDWander Travel &amp; Tours</h3>
+              <p class="kind">Mobile travel booking app</p>
+              <p>A booking app for Philippine tour packages. The screens cover sign in, a home feed of promo deals, and a Smart Recommendations flow where travelers narrow tours by island group and budget.</p>
+              <ul class="tags tags-sm">
+                <li>Mobile app</li><li>UI/UX</li><li>Travel booking</li><li>Philippines</li>
+              </ul>
+              <div class="links">
+                <!-- Add a live demo or prototype link here when you have one:
+                <a href="https://..." target="_blank" rel="noopener" class="btn btn-ghost">Live demo</a> -->
+                <a href="./case-study/mkdwander.html" class="btn btn-primary">Case study</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- OJT -->
+    <section id="ojt" class="section">
+      <div class="wrap">
+        <div class="ojt">
+          <h2>My OJT goals</h2>
+          <div class="ojt-grid">
+            <div>
+              <h3>What I can contribute</h3>
+              <p>Create clean and user-friendly designs, organize layouts, and turn ideas into clear visual designs using Figma.</p>
+            </div>
+            <div>
+              <h3>What I want to learn</h3>
+              <p>Improve my UI/UX design skills, learn industry design practices, and understand how to create designs based on user needs and feedback.</p>
+            </div>
+            <div>
+              <h3>Availability</h3>
+              <p>500 hours required. Open to onsite, hybrid or remote.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap split">
+        <h2>Contact</h2>
+        <div class="prose">
+          <p>If your company is accepting OJT students, I'd be glad to share my resume or answer any questions.</p>
+          <p><a class="email" href="mailto:mikeedorol0@gmail.com">mikeedorol0@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© 2026 Mikee Dorol. Designed and coded by me.</div>
+  </footer>
+
+</body>
+</html>
