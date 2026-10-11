@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MKDWander Travel &amp; Tours | Case study | Mikee Dorol</title>
-  <meta name="description" content="Case study of MKDWander Travel & Tours, a mobile app for booking Philippine tour packages." />
+  <meta name="description" content="Case study of MKDWander Travel & Tours, a smart AI-powered mobile travel app for Philippine tour packages." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -25,11 +25,12 @@
     <section class="hero cs-hero">
       <div class="wrap hero-grid">
         <div>
-          <p class="cs-kind">Case study &middot; Mobile travel booking app</p>
+          <p class="cs-kind">Case study &middot; AI-powered mobile travel app</p>
           <h1>MKDWander Travel &amp; Tours</h1>
           <p class="lead">
-            A booking app for Philippine tour packages. Travelers browse promo deals, pick an island group
-            and a budget, and book trips like Island Escape Palawan 2026 from one place.
+            A smart travel companion app for MKDWander Travel &amp; Tours that combines
+            AI-powered recommendations, augmented reality navigation, predictive analytics,
+            and a full booking system for Philippine and international tour packages.
           </p>
           <div class="actions">
             <a href="#screens" class="btn btn-primary">See the screens</a>
@@ -38,11 +39,12 @@
         </div>
 
         <dl class="facts">
-          <div><dt>Type</dt><dd>Mobile app</dd></div>
-          <div><dt>Focus</dt><dd>UI/UX design</dd></div>
+          <div><dt>Type</dt><dd>Mobile app + Web dashboard</dd></div>
+          <div><dt>Role</dt><dd>UI/UX Design &amp; Frontend Dev</dd></div>
           <div><dt>Screens</dt><dd>Splash, Sign in, Home, Smart Match</dd></div>
           <div><dt>Market</dt><dd>Philippines</dd></div>
           <div><dt>Currency</dt><dd>PHP (&#8369;)</dd></div>
+          <div><dt>Stack</dt><dd>Flutter &middot; Firebase &middot; Node.js &middot; Mapbox &middot; ARCore &middot; TensorFlow &middot; PayMongo</dd></div>
         </dl>
       </div>
     </section>
@@ -53,10 +55,13 @@
         <h2>Overview</h2>
         <div class="prose">
           <p>
-            MKDWander Travel &amp; Tours sells tour packages around the Philippines. The app covers the whole booking
-            path: sign in, browse deals, narrow the tours by region and budget, then book with a downpayment.
+            MKDWander Travel &amp; Tours is a small travel agency in the Philippines that offers domestic
+            and international tour packages. Before this app, the agency had no digital platform &mdash;
+            all marketing and booking was done manually, making it hard to reach new clients.
           </p>
           <p>
+            This capstone project builds a Flutter-based mobile app that brings AI recommendations,
+            AR navigation, predictive analytics, a chatbot, and a booking system into one branded platform.
             Instead of making travelers scroll through a catalog, the Smart Recommendations screen opens with a
             Virtual Travel Assistant card that says what it will do with their answers.
           </p>
@@ -65,11 +70,31 @@
       </div>
     </section>
 
+    <!-- MY ROLE -->
+    <section class="section">
+      <div class="wrap split">
+        <h2>My role</h2>
+        <div class="prose">
+          <p>
+            I handled the UI/UX design and frontend development for the MKDWander Mobile Application.
+            I designed all app screens in Figma &mdash; from the splash screen and onboarding flow to the
+            AI recommendation interface and booking screens &mdash; and developed the Flutter UI components
+            that bring those designs to life on Android and iOS.
+          </p>
+          <p>
+            I also collaborated closely with the team on the overall system architecture, ensuring that
+            the visual design was consistent with the backend data structures and the user flows we
+            mapped out together.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- FEATURES -->
     <section class="section">
       <div class="wrap">
         <h2>What the app does</h2>
-        <p class="section-note">Four things a traveler can do, each tied to a screen below.</p>
+        <p class="section-note">Seven things a traveler or agency staff can do.</p>
         <div class="feature-list">
           <article>
             <h3>Browse by island group</h3>
@@ -85,7 +110,19 @@
           </article>
           <article>
             <h3>Sign in quickly</h3>
-            <p>Email or Google login, a Register link, and a splash screen that syncs the profile so saved itineraries are ready when the app opens.</p>
+            <p>Email or Google login via Firebase Authentication, a Register link, and a splash screen that syncs the profile so saved itineraries are ready when the app opens.</p>
+          </article>
+          <article>
+            <h3>Navigate with AR</h3>
+            <p>Point the phone camera at any destination and see real-time AR overlays of nearby landmarks, tourist spots, hotels, and restaurants powered by Google ARCore and Mapbox.</p>
+          </article>
+          <article>
+            <h3>Get travel insights</h3>
+            <p>The predictive analytics module shows crowd forecasts by month, best travel windows, and estimated costs based on MKDWander's historical booking data &mdash; so travelers can plan smarter.</p>
+          </article>
+          <article>
+            <h3>Chat for support</h3>
+            <p>An AI chatbot answers common questions about packages, pricing, and booking. Complex concerns are escalated to a human agent, with email fallback when the agent is offline.</p>
           </article>
         </div>
       </div>
@@ -138,7 +175,7 @@
         <ol class="steps">
           <li>
             <h3>Splash</h3>
-            <p>The logo sits on a sunrise-yellow glow while a plane moves along a progress bar and the profile syncs.</p>
+            <p>The logo sits on a sunrise-yellow glow while a plane moves along a progress bar and the profile syncs via Firebase.</p>
           </li>
           <li>
             <h3>Sign in</h3>
@@ -166,6 +203,7 @@
           <li><strong>Budget as named tiers.</strong> Budget, Mid and Premium with peso ranges are easier to pick than typing an amount.</li>
           <li><strong>Photography carries the mood.</strong> Destination photos fill the sign-in screen and the Home header, while cards and controls stay white and quiet.</li>
           <li><strong>Color has a job.</strong> Dark navy marks selected options, sunset orange marks badges and the budget slider, and blue or indigo marks actions like Find My Trips and Book Now.</li>
+          <li><strong>AR as a natural extension.</strong> The navigation overlay uses the same card style as the rest of the app so the AR screen feels part of the same product, not a separate tool.</li>
         </ul>
       </div>
     </section>
